@@ -29,59 +29,37 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<Pages name="Группа1" id="25">
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="26"/>
+		<UsualGroup name="Группа5" id="43">
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="44"/>
 			<ChildItems>
-				<Page name="Группа2" id="27">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отправить</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="28"/>
-					<ChildItems>
-						<InputField name="ID" id="4">
-							<DataPath>ID</DataPath>
-							<ContextMenu name="IDКонтекстноеМеню" id="5"/>
-							<ExtendedTooltip name="IDРасширеннаяПодсказка" id="6"/>
-						</InputField>
-						<InputField name="Сообщение1" id="10">
-							<DataPath>Сообщение</DataPath>
-							<ContextMenu name="Сообщение1КонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="Сообщение1РасширеннаяПодсказка" id="12"/>
-						</InputField>
-						<Button name="Кнопка1" id="31">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ОтправитьСообщение</CommandName>
-							<ExtendedTooltip name="Кнопка1РасширеннаяПодсказка" id="32"/>
-						</Button>
-					</ChildItems>
-				</Page>
-				<Page name="Группа3" id="29">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Получить</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="30"/>
-					<ChildItems>
-						<Button name="Получить" id="23">
-							<Type>UsualButton</Type>
-							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-							<CommandName>Form.Command.ПолучитьСообщение</CommandName>
-							<ExtendedTooltip name="ПолучитьРасширеннаяПодсказка" id="24"/>
-						</Button>
-						<TextDocumentField name="Ответ1" id="20">
-							<DataPath>Ответ</DataPath>
-							<ContextMenu name="Ответ1КонтекстноеМеню" id="21"/>
-							<ExtendedTooltip name="Ответ1РасширеннаяПодсказка" id="22"/>
-						</TextDocumentField>
-					</ChildItems>
-				</Page>
+				<InputField name="ID" id="4">
+					<DataPath>ID</DataPath>
+					<ContextMenu name="IDКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="IDРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Сообщение1" id="10">
+					<DataPath>Сообщение</DataPath>
+					<ContextMenu name="Сообщение1КонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="Сообщение1РасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<Button name="КнопкаОтправить" id="31">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтправитьСообщение</CommandName>
+					<ExtendedTooltip name="КнопкаОтправитьРасширеннаяПодсказка" id="32"/>
+				</Button>
+				<TextDocumentField name="Ответ1" id="20">
+					<DataPath>Ответ</DataPath>
+					<ContextMenu name="Ответ1КонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="Ответ1РасширеннаяПодсказка" id="22"/>
+				</TextDocumentField>
+				<Button name="Получить" id="23">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.Command.ПолучитьСообщение</CommandName>
+					<ExtendedTooltip name="ПолучитьРасширеннаяПодсказка" id="24"/>
+				</Button>
 			</ChildItems>
-		</Pages>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -161,7 +139,7 @@
 					<v8:content>Отправить сообщение</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Отправить</Action>
+			<Action>ОтправитьСообщение</Action>
 		</Command>
 		<Command name="ПолучитьСообщение" id="2">
 			<Title>
