@@ -29,8 +29,8 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="Группа5" id="43">
-			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="44"/>
+		<UsualGroup name="Группа1" id="45">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="46"/>
 			<ChildItems>
 				<InputField name="ID" id="4">
 					<DataPath>ID</DataPath>
@@ -47,17 +47,22 @@
 					<CommandName>Form.Command.ОтправитьСообщение</CommandName>
 					<ExtendedTooltip name="КнопкаОтправитьРасширеннаяПодсказка" id="32"/>
 				</Button>
-				<TextDocumentField name="Ответ1" id="20">
-					<DataPath>Ответ</DataPath>
-					<ContextMenu name="Ответ1КонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="Ответ1РасширеннаяПодсказка" id="22"/>
-				</TextDocumentField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="43">
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="44"/>
+			<ChildItems>
 				<Button name="Получить" id="23">
 					<Type>UsualButton</Type>
 					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 					<CommandName>Form.Command.ПолучитьСообщение</CommandName>
 					<ExtendedTooltip name="ПолучитьРасширеннаяПодсказка" id="24"/>
 				</Button>
+				<TextDocumentField name="Ответ1" id="20">
+					<DataPath>Ответ</DataPath>
+					<ContextMenu name="Ответ1КонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="Ответ1РасширеннаяПодсказка" id="22"/>
+				</TextDocumentField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
